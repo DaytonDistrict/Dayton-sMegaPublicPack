@@ -1,0 +1,109 @@
+@name Dayton's Shit Ass PTC
+@inputs Base:entity
+@outputs
+@persist
+@trigger
+
+E=Base
+local P2M = p2mCreate(64,E:toWorld(vec(0,0,0)),E:toWorld(ang(0,0,0)))
+if((first() | dupefinished())){
+
+#-----Where you want it?
+PosX = 0
+PosY = 0
+PosZ = 0
+
+
+#-----PTC Shit
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(6+PosX,30+PosY,-0.4+PosZ),ang(0,0,0),vec(1,1,0.5),0,0,0)
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(6+PosX,-30+PosY,-0.4+PosZ),ang(0,0,0),vec(1,1,0.5),0,0,0)
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(21+PosX,30+PosY,-0.4+PosZ),ang(0,0,0),vec(1,1,0.5),0,0,0)
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(21+PosX,-30+PosY,-0.4+PosZ),ang(0,0,0),vec(1,1,0.5),0,0,0)
+P2M:p2mPushModel(3,"models/anytrains/props/detail/beacon.mdl",array(0),vec(21+PosX,0+PosY,-0.4+PosZ),ang(0,0,0),vec(0.35),0,0,46)
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(21+PosX,0+PosY,-0.4+PosZ),ang(0,0,0),vec(0.55,0.55,0.35),0,0,0)
+P2M:p2mPushModel(3,"models/anytrains/props/detail/beacon.mdl",array(0),vec(-22+PosX,0+PosY,-0.4+PosZ),ang(0,0,0),vec(0.35),0,0,46)
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(-22+PosX,0+PosY,-0.4+PosZ),ang(0,0,0),vec(0.55,0.55,0.35),0,0,0)
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(6+PosX,0+PosY,-0.4+PosZ),ang(0,0,0),vec(0.5,0.5,0.25),0,0,0)
+P2M:p2mPushModel(3,"models/gsgtrainprops/parts/antennae/sinclair.mdl",array(0),vec(10+PosX,-15+PosY,1+PosZ),ang(0,90,0),vec(0.75),0,0,0)
+P2M:p2mPushModel(3,"models/gsgtrainprops/parts/antennae/sinclair.mdl",array(0),vec(-35+PosX,0+PosY,0.4+PosZ),ang(0,90,0),vec(0.35),0,0,0)
+P2M:p2mPushModel(3,"models/gsgtrainprops/parts/antennae/sinclair.mdl",array(0),vec(-25+PosX,15+PosY,1+PosZ),ang(0,45,0),vec(0.75),0,0,0)
+P2M:p2mPushModel(3,"models/gsgtrainprops/parts/antennae/sinclair.mdl",array(0),vec(-25+PosX,-15+PosY,1+PosZ),ang(0,135,0),vec(0.75),0,0,0)
+P2M:p2mPushModel(3,"models/gsgtrainprops/parts/antennae/sinclair.mdl",array(0),vec(35+PosX,-30+PosY,0.4+PosZ),ang(0,90,0),vec(0.35),0,0,0)
+P2M:p2mPushModel(3,"models/gsgtrainprops/parts/antennae/sinclair.mdl",array(0),vec(35+PosX,30+PosY,0.4+PosZ),ang(0,90,0),vec(0.35),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/geometry/fdisc_12.mdl",array(0),vec(35+PosX,0+PosY,-0.4+PosZ),ang(0,90,90),vec(0.25,0.25,0.25),0,0,0)
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(39+PosX,-15+PosY,-0.4+PosZ),ang(0,0,0),vec(0.55,0.55,0.35),0,0,0)
+P2M:p2mPushModel(2,"models/wam98_trainparts/antennas/ice_omnidirectional.mdl",array(0),vec(35+PosX,15+PosY,-0.4+PosZ),ang(0,0,0),vec(0.55,0.55,0.35),0,0,0)
+
+#-----Foundation
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_2/rect_12x12x3.mdl",array(0),vec(-5+PosX,0+PosZ,-2.75+PosY),ang(0,0,0),vec(1,4,0.1),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_2/rect_12x12x3.mdl",array(0),vec(21+PosX,0+PosZ,-1.75+PosY),ang(0,0,0),vec(3.5,5.75,0.75),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_2/rect_12x12x3.mdl",array(0),vec(21+PosX,0+PosZ,-0.75+PosY),ang(0,0,0),vec(3.4,5.65,0.3),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_2/rect_12x12x3.mdl",array(0),vec(-25.75+PosX,0+PosZ,-1.75+PosY),ang(0,0,0),vec(2.5,5.75,0.75),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_2/rect_12x12x3.mdl",array(0),vec(-25.75+PosX,0+PosZ,-0.75+PosY),ang(0,0,0),vec(2.4,5.65,0.3),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-5+PosX,6+PosZ,-1.75+PosY),ang(90,0,0),vec(0.45,0.45,4),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-10+PosX,6+PosZ,-1.75+PosY),ang(90,0,0),vec(0.5,0.5,0.5),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-0.75+PosX,6+PosZ,-1.75+PosY),ang(90,0,0),vec(0.5,0.5,0.5),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-5+PosX,23+PosZ,-1.75+PosY),ang(90,0,0),vec(0.45,0.45,4),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-10+PosX,23+PosZ,-1.75+PosY),ang(90,0,0),vec(0.5,0.5,0.5),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-0.75+PosX,23+PosZ,-1.75+PosY),ang(90,0,0),vec(0.5,0.5,0.5),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-5+PosX,-23+PosZ,-1.75+PosY),ang(90,0,0),vec(0.45,0.45,4),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-10+PosX,-23+PosZ,-1.75+PosY),ang(90,0,0),vec(0.5,0.5,0.5),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/cylinders/size_2/cylinder_3x3.mdl",array(0),vec(-0.75+PosX,-23+PosZ,-1.75+PosY),ang(90,0,0),vec(0.5,0.5,0.5),0,0,0)
+
+
+
+#-----Other
+P2M:p2mPushModel(1,"models/sprops/geometry/fring_18.mdl",array(0),vec(0.75+PosX,35.5+PosZ,-1.25+PosY),ang(0,0,90),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/geometry/fring_18.mdl",array(0),vec(41.1+PosX,35.5+PosZ,-1.25+PosY),ang(0,0,90),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/geometry/fring_18.mdl",array(0),vec(0.75+PosX,-35.5+PosZ,-1.25+PosY),ang(0,0,90),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/geometry/fring_18.mdl",array(0),vec(41.1+PosX,-35.5+PosZ,-1.25+PosY),ang(0,0,90),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/geometry/fring_18.mdl",array(0),vec(-11.5+PosX,35.5+PosZ,-1.25+PosY),ang(0,0,90),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/geometry/fring_18.mdl",array(0),vec(-40.1+PosX,35.5+PosZ,-1.25+PosY),ang(0,0,90),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/geometry/fring_18.mdl",array(0),vec(-11.5+PosX,-35.5+PosZ,-1.25+PosY),ang(0,0,90),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/geometry/fring_18.mdl",array(0),vec(-40.1+PosX,-35.5+PosZ,-1.25+PosY),ang(0,0,90),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_1/rect_3x12x3.mdl",array(0),vec(0.75+PosX,34.5+PosZ,-1.25+PosY),ang(0,90,0),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_1/rect_3x12x3.mdl",array(0),vec(41.1+PosX,34.5+PosZ,-1.25+PosY),ang(0,90,0),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_1/rect_3x12x3.mdl",array(0),vec(0.75+PosX,-34.5+PosZ,-1.25+PosY),ang(0,90,0),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_1/rect_3x12x3.mdl",array(0),vec(41.1+PosX,-34.5+PosZ,-1.25+PosY),ang(0,90,0),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_1/rect_3x12x3.mdl",array(0),vec(-11.5+PosX,34.5+PosZ,-1.25+PosY),ang(0,90,0),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_1/rect_3x12x3.mdl",array(0),vec(-40.1+PosX,34.5+PosZ,-1.25+PosY),ang(0,90,0),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_1/rect_3x12x3.mdl",array(0),vec(-11.5+PosX,-34.5+PosZ,-1.25+PosY),ang(0,90,0),vec(0.075),0,0,0)
+P2M:p2mPushModel(1,"models/sprops/rectangles/size_1/rect_3x12x3.mdl",array(0),vec(-40.1+PosX,-34.5+PosZ,-1.25+PosY),ang(0,90,0),vec(0.075),0,0,0)
+
+#-----Iforgetwhattheseare-amabobbers
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(2.5+PosX,34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(21+PosX,34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(39+PosX,34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(2.5+PosX,-34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(21+PosX,-34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(39+PosX,-34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-13+PosX,-34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-25.5+PosX,-34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-38.5+PosX,-34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-13+PosX,34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-25.5+PosX,34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-38.5+PosX,34.1+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-11.15+PosX,-32.5+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-11.15+PosX,-16.25+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-11.15+PosX,0+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-11.15+PosX,32.5+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(-11.15+PosX,16.25+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(0.4+PosX,-32.5+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(0.4+PosX,-16.25+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(0.4+PosX,0+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(0.4+PosX,32.5+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+P2M:p2mPushModel(3,"models/sprops/cuboids/height06/size_1/cube_6x6x6.mdl",array(0),vec(0.4+PosX,16.25+PosZ,-0.7+PosY),ang(0,0,90),vec(0.1),0,0,0)
+#-----Shit
+P2M:p2mBuild()
+P2M:parentTo(Base)
+
+P2M:p2mSetMaterial(1,"icegt/loco/ice_trainmetal_white")
+P2M:p2mSetColor(1,vec(255))
+P2M:p2mSetMaterial(2,"icegt/loco/ice_trainmetal_white")
+P2M:p2mSetColor(2,vec(25))
+P2M:p2mSetMaterial(3,"models/proppertextures/aluminum")
+P2M:p2mSetColor(3,vec(255))
+
+#prop2mesh_debug_bodygroups (you need this lol)
+#array(1,2,3,4) (submaterials hnggg)
+}
